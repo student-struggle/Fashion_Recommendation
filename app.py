@@ -74,7 +74,7 @@ def Registration():
             if user:
                 st.session_state.authenticated = True
                 st.session_state.user_id = user[0]
-                
+                st.success("Login successful!")
             else:
                 st.error("Invalid username or password.")
     
