@@ -208,19 +208,4 @@ def fashion_recommender(show_history=False):
                     st.write(f"Price: ₹{price}")  # Display price in rupees
 
 # Main function
-def main():
-    if "authenticated" not in st.session_state:
-        st.session_state.authenticated = False
-
-    if not st.session_state.authenticated:
-        Registration()
-    else:
-        if "first_login" not in st.session_state:
-            st.session_state.first_login = True
-
-        if st.session_state.first_login:
-            fashion_recommender(show_history=True)
-            st.session_state.first_login = False
-        else:
-            fashion_recommender(show_history=False)
 
