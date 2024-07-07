@@ -107,5 +107,4 @@ def main():
             fashion_recommender(show_history=False)
 
 if __name__ == "__main__":
-    main()
-    
+  main()
