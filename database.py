@@ -7,7 +7,7 @@ def create_connection():
     db_config = st.secrets["mysql"]
     conn = mysql.connector.connect(
         host=db_config["host"],
-        user=db_config["username"],
+        user=db_config["user"],
         password=db_config["password"],
         database=db_config["database"],
         port=db_config["port"]
